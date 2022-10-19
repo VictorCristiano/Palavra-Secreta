@@ -1,0 +1,93 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  jsutify-content: center;
+  width: 80vw;
+  height: 80vh;
+}
+.game h1 {
+  font-size: 2.5em;
+}
+
+.points span {
+  font-weight: bold;
+}
+
+.tip span {
+  color: #ecfa00;
+}
+
+.wordContainer {
+  margin: 1.5em;
+  padding: 1.5em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.letter,
+.blankSquare {
+  font-size: 4.6rem;
+  line-height: 1.5;
+  border: 3px solid #000;
+  height: 6rem;
+  width: 6rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
+
+.letterContainer p {
+  margin-bottom: 1.2em;
+}
+
+.letterContainer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letterContainer input {
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 2em;
+  text-align: center;
+  margin-right: 1em;
+}
+
+.btn-restart {
+margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  
+  
+  .letterContainer input {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2em;
+    text-align: center;
+    margin-right: 1em;
+  }
+
+.letter,
+.blankSquare {
+  font-size: 2.6rem;
+  line-height: 1.5;
+  border: 3px solid #000;
+  height: 4rem;
+  width: 4rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
+
+
+  }
+
