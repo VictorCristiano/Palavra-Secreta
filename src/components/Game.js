@@ -1,7 +1,7 @@
-import { useState, useRef } from "react";
+import { useState, useRef } from 'react'
 
 // styles
-import "./Game.css";
+import './Game.css'
 
 const Game = ({
   verifyLetter,
@@ -12,24 +12,23 @@ const Game = ({
   wrongLetters,
   guesses,
   score,
-  retry,
+  retry
 }) => {
-  const [letter, setLetter] = useState("");
-  const letterInputRef = useRef(null);
+  const [letter, setLetter] = useState('')
+  const letterInputRef = useRef(null)
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault()
 
-    verifyLetter(letter);
+    verifyLetter(letter)
 
-    setLetter("");
+    setLetter('')
 
-    letterInputRef.current.focus();
-  };
+    letterInputRef.current.focus()
+  }
 
   return (
-    
-      <div className="game">
+    <div className="game">
       <p className="points">
         <span>Pontuação</span>: {score}
       </p>
@@ -48,7 +47,6 @@ const Game = ({
             <span key={i} className="blankSquare"></span>
           )
         )}
-
       </div>
       <div className="letterContainer">
         <p>Tente adivnhar uma letra da palavra:</p>
@@ -57,15 +55,17 @@ const Game = ({
             type="text"
             name="letter"
             maxLength="1"
-            onChange={(e) => setLetter(e.target.value)}
+            onChange={e => setLetter(e.target.value)}
             required
             value={letter}
             ref={letterInputRef}
-            id='ipt-letter'
+            id="ipt-letter"
           />
           <button>tentar</button>
         </form>
-        <button onClick={retry} className='btn-restart'>Reiniciar</button>
+        <button onClick={retry} className="btn-restart">
+          Reiniciar
+        </button>
       </div>
       <div className="wrongLettersContainer">
         <p>Letras já utilizadas:</p>
@@ -73,9 +73,8 @@ const Game = ({
           <span key={i}>{letter}, </span>
         ))}
       </div>
-      </div>
-    
-  );
-};
+    </div>
+  )
+}
 
-export default Game;
+export default Game
