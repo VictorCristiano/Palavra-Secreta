@@ -29,7 +29,7 @@ function App() {
   
   const [guessedLetters, setGuessedLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
-  const [guesses, setGuesses] = useState(3);
+  const [guesses, setGuesses] = useState(5);
   const [score, setScore] = useState(0);
   
   
@@ -61,7 +61,7 @@ function App() {
     // choose a word
     const { category, word } = pickWordAndCategory();
 
-    console.log(category, word);
+    
 
     let wordLetters = word.split("");
 
@@ -103,7 +103,7 @@ function App() {
     }
   };
 
-  console.log(wrongLetters);
+  
 
   // restart the game
   const retry = () => {

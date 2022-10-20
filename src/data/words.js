@@ -15,6 +15,11 @@ export const wordsList = {
   
   Livros_da_Biblia: ["Genesis", "exodo", "levitico", "romanos", "mateus", "lucas", 'apocalipse', 'numeros', 'cronicas', 'rute', 'zacarias', 'malaquias' ],
 };
+/* 
+
+Times_do_Brasil: ["Flamengo", "Vasco", "Sport", "Palmeiras", "Santos", "Botafogo", 'Fluminense', 'Gremio', 'Internacional', 'Cruzeiro', 'Corinthians', 'Fortaleza'. 'Coritiba' ],
+
+Times_do_Brasil: ["Flamengo", "Vasco", "Sport", "Palmeiras", "Santos", "Botafogo", 'Fluminense', 'Gremio', 'Internacional', 'Cruzeiro', 'Corinthians', 'Fortaleza'. 'Coritiba' ], */
 
 
 
